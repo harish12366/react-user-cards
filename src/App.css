@@ -1,0 +1,99 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+/* React root */
+#root {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cards container */
+.user-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+/* Individual card */
+.user-card {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Card hover */
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* User name */
+.user-card h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+/* User email */
+.user-card p {
+    margin-bottom: 12px;
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
+
+/* Button */
+.user-card button {
+    align-self: flex-end;
+    width: auto;
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: #1685dc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+/* Button hover */
+.user-card button:hover {
+    background-color: #0868b2;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .user-container {
+        gap: 20px;
+        padding: 25px 15px;
+    }
+
+    .user-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
